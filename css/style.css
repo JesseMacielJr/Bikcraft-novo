@@ -1,16 +1,28 @@
 body {
    margin: 0px;
    font-family: Arial, Helvetica, sans-serif;
+   padding-bottom: 600px;
+}
+
+h1,
+ul,
+p {
+   margin: 0px;
 }
 
 ul {
-   margin: 0px;
    padding: 0px;
    list-style: none;
 }
 
 a {
    text-decoration: none;
+   color: inherit;
+}
+
+img {
+   max-width: 100%;
+   display: block;
 }
 
 .header-bg {
@@ -24,9 +36,9 @@ a {
    justify-content: space-between;
    align-items: center;
    box-sizing: border-box;
-   padding: 20px;
    max-width: 1200px;
    margin: 0 auto;
+   padding: 20px;
 }
 
 .header-menu {
@@ -44,18 +56,18 @@ a {
 }
 
 .header-menu a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #fff;
-    margin-top: 4px;
-    transition: 0.3s;
+   content: "";
+   display: block;
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background: #fff;
+   margin-top: 4px;
+   transition: 0.3s;
 }
 
 .header-menu a:hover::after {
-    width: 100%;
+   width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -71,8 +83,8 @@ a {
       background: #2e2e2e;
    }
    .header-menu a::after {
-    display: none;
-}
+      display: none;
+   }
 }
 
 @media (max-width: 600px) {
@@ -82,5 +94,105 @@ a {
    .header-menu a {
       padding: 8px 12px;
       font-size: 0.875rem;
+   }
+}
+
+.introducao-bg {
+   background: #000;
+   color: #fff;
+   box-shadow: inset 0px -120px 0px #fff;
+}
+
+.introducao {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0px 40px;
+   box-sizing: border-box;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.introducao-conteudo {
+   align-self: end;
+   padding-bottom: 200px;
+}
+
+.introducao img {
+   border-radius: 4px;
+   height: 100%;
+   object-fit: cover;
+}
+
+.introducao h1 {
+   margin-bottom: 32px;
+   font-size: 64px;
+   line-height: 1.125;
+}
+
+.introducao h1 span {
+   color: #ffbb00;
+}
+
+.introducao p {
+   margin-bottom: 20px;
+   font-size: 24px;
+   line-height: 1.5;
+   color: #b2b2b2;
+}
+
+.introducao a {
+   display: inline-block;
+   padding: 16px 32px;
+   border-radius: 4px;
+   background: linear-gradient(#ffbf00, #f2a50c);
+   color: #320;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+   text-transform: uppercase;
+   font-size: 1.125rem;
+   line-height: 1.5;
+   font-weight: 700;
+}
+
+.introducao a:hover {
+   background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 600px) {
+   .introducao a {
+      padding: 12px 16px;
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 1200px) {
+   .introducao h1 {
+      font-size: 3rem;
+   }
+   .introducao p {
+      font-size: 1.125rem;
+   }
+}
+
+@media (max-width: 800px) {
+   .introducao-bg {
+      background: #111;
+      padding-top: 40px;
+      box-shadow: inset 0px -60px #fff;
+   }
+   .introducao {
+      grid-template-columns: 1fr;
+      gap: 32px;
+   }
+   .introducao-conteudo {
+      padding-bottom: 0px;
+   }
+   .introducao h1 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+   }
+   .introducao img {
+      height: 300px;
+      width: 100%;
    }
 }
