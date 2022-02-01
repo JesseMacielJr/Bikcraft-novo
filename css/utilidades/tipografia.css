@@ -7,7 +7,7 @@
 }
 
 .font-2-xl {
-   font: 600 2rem/1.25 "Roboto", sans-serif;
+   font: 500 2rem/1.25 "Roboto", sans-serif;
 }
 
 .font-1-l {
@@ -49,7 +49,7 @@
 }
 
 .font-1-xs {
-   font: 600 0.75rem/1.33 "Poppins", sans-serif;
+   font: 400 0.75rem/1.33 "Poppins", sans-serif;
 }
 
 @media (max-width: 1200px) {
