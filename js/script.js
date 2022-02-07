@@ -32,3 +32,23 @@ perguntas.forEach(pergunta => {
 
     })
 })
+
+
+// Galeria de Bicicletas
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+galeria.forEach((img) => {
+    img.addEventListener('click', (e) => {
+        const media = matchMedia('(min-width: 1000px)').matches;
+        if (media) {
+            galeriaContainer.prepend(e.currentTarget);
+        }
+    })
+})
+
+
+// Animação
+if (window.SimpleAnime) {
+    new SimpleAnime();
+}

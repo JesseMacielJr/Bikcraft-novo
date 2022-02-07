@@ -18,6 +18,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap"
             rel="stylesheet">
+    <script>document.documentElement.classList.add("js")</script>
     </head>
 
     <body id="seguros">
@@ -43,7 +44,7 @@
             </div>
 
             <div class="seguros container">
-                <div class="seguros-item">
+                <div class="seguros-item fadeInLeft" data-anime="200">
                     <h3 class="font-1-xl cor-6">PRATA</h3>
                     <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
                     <ul class="font-2-m cor-0">
@@ -54,7 +55,7 @@
                     </ul>
                     <a class="botao secundario" href="orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
                 </div>
-                <div class="seguros-item">
+                <div class="seguros-item fadeInRight" data-anime="400">
                     <h3 class="font-1-xl cor-1">OURO</h3>
                     <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
                     <ul class="font-2-m cor-0">
@@ -121,7 +122,8 @@
                 <div>
                     <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de
                             pagamento vocês aceitam?</button></dt>
-                    <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos pagamentos parcelados em todos os cartões de
+                    <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos pagamentos parcelados em todos os cartões
+                        de
                         crédito. Para
                         pagamentos à vista também
                         aceitarmos PIX e Boleto através do PagSeguro.</dd>
@@ -200,6 +202,8 @@
                 <p class="font-2-m cor-6 footer-copy">Bikcraft © Alguns direitos reservados.</p>
             </div>
         </footer>
+
+        <script src="js/plugins/simple-anime.js"></script>
         <script src="js/script.js"></script>
     </body>
 
